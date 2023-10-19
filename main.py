@@ -18,6 +18,8 @@ class BingChatAPI:
         self.driver = Chrome(options=self.options)
         self.cookie_value = cookie_value
 
+        #hi
+
     def initialize(self):
         cookie = {"name": "_U", "value": self.cookie_value}
         self.driver.get("https://www.bing.com/chat")  # Replace with the actual Bing Chat URL
