@@ -4,7 +4,7 @@
 
 ## Bing Chat API
 
-A simple and efficient Bing Chat API leveraging ChatGPT-4 capabilities for text completions.
+An all-inclusive API endpoint that harnesses the power of ChatGPT-4 for text completions, GPT-4 Vision for vision tasks, and DALL-E 3 for image creation. This comprehensive API is designed to provide a seamless experience for users looking to integrate advanced AI capabilities into their applications. Future integrations will include Windows Copilot, offering a way to control Windows in a manner similar to open-interpreter.
 
 ## Installation 🐠
 ---------------
@@ -56,7 +56,10 @@ if __name__ == "__main__":
 - **Easy to Use**: With just a few lines of code, you can start generating text completions.
 - **Customizable**: Provide your own creative prompts to generate unique text completions.
 - **Real-Time Updates**: The API provides real-time logging information about the chat session.
-
+- **Multimodal Capabilities**: The API integrates ChatGPT-4 for text, GPT-4 Vision for vision tasks, and DALL-E 3 for image creation, offering a wide range of functionalities in a single endpoint.
+- **Future Windows Copilot Integration**: Upcoming features will allow users to control Windows functionalities, making it a versatile tool for various applications.
+- **Future voice activation for sending prompts
+- 
 ## License 📜
 ----------
 
@@ -70,5 +73,7 @@ Bing Chat API is licensed under the MIT License. See the [LICENSE](https://domai
 - [ ] Create tests for BingChat
 - [ ] Implement human feedback loop for improved chat sessions
 - [ ] Support different output formats
+- [ ] Develop integration with Windows Copilot for enhanced control over Windows functionalities
+- [ ] Develop voice activation for sending prompts 
 
-This documentation provides a comprehensive guide on how to interact with the Bing Chat API, leveraging ChatGPT-4 capabilities for text completions.
+This documentation provides a comprehensive guide on how to interact with the Bing Chat API, leveraging the combined capabilities of ChatGPT-4, GPT-4 Vision, and DALL-E 3.
