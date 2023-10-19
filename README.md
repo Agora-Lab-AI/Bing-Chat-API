@@ -1,67 +1,50 @@
-# Bing API Documentation
+# Bing Chat API Documentation
 
 [![Multi-Modality](agorabanner.png)](https://discord.gg/qUtxnK2NMf)
 
-## Bing API
+## Bing Chat API
 
-A radically simple Bing API for both text and image completions using ChatGPT-4 and DALL-E 3.
+A simple and efficient Bing Chat API leveraging ChatGPT-4 capabilities for text completions.
 
 ## Installation 🐠
 ---------------
 
-You can install the Bing API using pip:
+You can install the Bing Chat API using pip:
 
 ```
-pip3 install --upgrade bingapi
+pip3 install --upgrade bingchatapi
 ```
 
 ## Usage 🐡
 --------
 
-Here's a simple example of how to use the Bing API for DALL-E 3:
+### ChatGPT-4 Usage:
 
 ```python
 import logging
-from bingapi import Dalle
+from bingchatapi import BingChat
 
-# Define cookie using env or empty string
-cookie = ""
-
-# Set up logging
-logging.basicConfig(level=logging.INFO)
-
-# Instantiate the Dalle class with your cookie value
-dalle = Dalle(cookie)
-
-# Open the website with your query
-dalle.create(
-    "Fish hivemind swarm in light blue avatar anime in zen garden pond concept art anime art, happy fish"
-)
-
-# Get the image URLs
-urls = dalle.get_urls()
-
-# Download the images to your specified folder
-dalle.download(urls, "images/")
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    chat = BingChat("")
+    initial_message = "Hello, Bing!"
+    messages = chat.run(initial_message)
+    print("Chat history:", messages)
 ```
 
-## `Dalle` Documentation
+**Disclaimer**: Using this API excessively or in ways that violate Bing's terms of service may result in your account being banned. Always ensure you're adhering to platform guidelines and use the API responsibly.
+
+## BingChat Documentation
 
 ### Table of Contents
 
 1. [Introduction](#introduction)
-2. [Dalle Class](#dalle-class)
+2. [BingChat Class](#bingchat-class)
    - [Initialization Parameters](#initialization-parameters)
 3. [Methods and Usage](#methods-and-usage)
-   - [get_time Method](#get-time-method)
-   - [get_time_save Method](#get-time-save-method)
-   - [download Method](#download-method)
-   - [create Method](#create-method)
-   - [get_urls Method](#get-urls-method)
    - [run Method](#run-method)
 4. [Examples](#examples)
-   - [Example 1: Creating a Dalle Instance](#example-1-creating-a-dalle-instance)
-   - [Example 2: Running the Whole Process](#example-2-running-the-whole-process)
+   - [Example 1: Creating a BingChat Instance and Running a Chat Session](#example-1-creating-a-bingchat-instance-and-running-a-chat-session)
 5. [Additional Information](#additional-information)
 6. [References and Resources](#references-and-resources)
 
@@ -70,29 +53,22 @@ dalle.download(urls, "images/")
 ## Features 🌊
 -----------
 
-- **Easy to Use**: With just a few lines of code, you can start generating images or text completions.
-- **Customizable**: Provide your own creative prompts to generate unique images or text completions.
-- **Automated Download**: The API automatically downloads the generated images to your specified folder.
-- **Real-Time Updates**: The API provides real-time logging information about the generation and download process.
+- **Easy to Use**: With just a few lines of code, you can start generating text completions.
+- **Customizable**: Provide your own creative prompts to generate unique text completions.
+- **Real-Time Updates**: The API provides real-time logging information about the chat session.
 
 ## License 📜
 ----------
 
-Bing API is licensed under the MIT License. See the [LICENSE](https://domain.apac.ai/LICENSE) file for more details.
+Bing Chat API is licensed under the MIT License. See the [LICENSE](https://domain.apac.ai/LICENSE) file for more details.
 
 ## Todo
 
 - [ ] Add Automatic cookie finding seamlessly
-- [ ] Automatically upgrade browser versions
-- [ ] Add automatic browser detection, cross-browser support
 - [ ] Simplify endpoints for ease of use
-- [ ] Integrate GPT-4 vision API using a similar approach
-- [ ] Establish Idea2Image Documentation
-- [ ] Create tests for Idea2Image
-- [ ] Implement human feedback loop for Idea2Image
-- [ ] Support different output types (svg, jpg)
-- [ ] Integrate BingChat API
-- [ ] Integrate ChatGPT Dalle API
-- [ ] Develop ChatGPT V API
+- [ ] Integrate more advanced features of ChatGPT-4
+- [ ] Create tests for BingChat
+- [ ] Implement human feedback loop for improved chat sessions
+- [ ] Support different output formats
 
-This documentation provides a comprehensive guide on how to interact with the Bing API, leveraging both ChatGPT-4 and DALL-E 3 capabilities for text and image completions.
+This documentation provides a comprehensive guide on how to interact with the Bing Chat API, leveraging ChatGPT-4 capabilities for text completions.
