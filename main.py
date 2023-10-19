@@ -25,7 +25,7 @@ class BingChatAPI:
         self.driver.refresh()
 
     def send_message(self, message: str):
-        chat_box = WebDriverWait(self.driver, 60).until(
+        chat_box = WebDriverWait(self.driver, 90).until(
             EC.presence_of_element_located((By.ID, "searchbox"))  # Replace with the actual ID
         )
         chat_box.send_keys(message)
@@ -56,6 +56,6 @@ if __name__ == "__main__":
         exit(1)
 
     bing_chat_api = BingChatAPI(cookie_value)
-    initial_text = "Once upon a time"
+    initial_text = "Once upon a time there was a cat named ______"
     completion = bing_chat_api.get_text_completion(initial_text)
     print(f"Initial text: {initial_text}\nCompletion: {completion}")
