@@ -1,3 +1,7 @@
-python-dotenv==1.0.0
-selenium==4.14.0
-undetected_chromedriver==3.5.3
+aiohttp
+BingImageCreator
+certifi
+httpx
+prompt_toolkit
+requests
+rich

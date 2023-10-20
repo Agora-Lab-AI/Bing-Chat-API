@@ -1,0 +1,32 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+  pull_request_target:
+    types: [ ready_for_review, review_requested, edited]
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.11 ]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      env:
+        EDGE_COOKIES: ${{ secrets.EDGE_COOKIES }}
+      run: |
+        python -m pip install pytest pytest-asyncio
+        python -m pip install .
+    - name: Test with pytest
+      run: |
+        pytest . -s
