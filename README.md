@@ -12,7 +12,7 @@ An all-inclusive API endpoint that harnesses the power of ChatGPT-4 for text com
 You can install the Bing Chat API using pip:
 
 ```
-pip3 install --upgrade bingchatapi
+pip3 install --upgrade bing-chat
 ```
 
 ## Usage 🐡
