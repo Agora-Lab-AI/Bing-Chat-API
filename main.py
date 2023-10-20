@@ -7,7 +7,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from undetected_chromedriver import Chrome, ChromeOptions
 from dotenv import load_dotenv
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
+options = Options()
+options.binary_location = "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"  # replace with your path
+driver = webdriver.Chrome(options=options)
 load_dotenv()
 
 class BingChatAPI:
