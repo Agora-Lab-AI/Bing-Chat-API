@@ -22,7 +22,7 @@ pip3 install --upgrade bing-chat
 
 ```python
 import logging
-from bingchatapi import BingChat
+from bing-chat import BingChat
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
