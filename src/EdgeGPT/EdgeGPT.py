@@ -102,6 +102,7 @@ class Chatbot:
         search_result: bool = False,
         locale: str = guess_locale(),
         simplify_response: bool = False,
+        image_path: str = None,
     ) -> dict:
         """
         Ask a question to the bot
@@ -183,6 +184,7 @@ class Chatbot:
         webpage_context: str | None = None,
         search_result: bool = False,
         locale: str = guess_locale(),
+        image_path: str = None,
     ) -> Generator[bool, dict | str, None]:
         """
         Ask a question to the bot

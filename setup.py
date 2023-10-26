@@ -12,7 +12,7 @@ if not PATH.exists():
 
 setup(
     name="bing-chat",
-    version="1.9.1",
+    version="1.9.3",
     license="MIT",
     author="Zack Bradshaw",
     author_email="zack@zackbradshaw.com",

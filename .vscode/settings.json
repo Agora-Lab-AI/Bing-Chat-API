@@ -1,5 +1,25 @@
 {
     "cSpell.words": [
         "websockets"
-    ]
+    ],
+    "key": "Ctrl+0",
+    "command": "layoutEditorGroups",
+    "args": {
+        "orientation": 1,
+        "groups": [
+            {
+                "size": 0.2
+            },
+            {
+                "size": 0.6
+            },
+            {
+                "size": 0.2,
+                "groups": [
+                    {},
+                    {}
+                ]
+            }
+        ]
+    }
 }
