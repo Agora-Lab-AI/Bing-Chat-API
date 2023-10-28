@@ -6,9 +6,8 @@ from pathlib import Path
 
 from log2d import Log
 
-from .EdgeGPT import Chatbot
-from .EdgeGPT import ConversationStyle
-from .ImageGen import ImageGen
+from bing_chat.BingGPT import Chatbot, ConversationStyle
+from bing_chat.ImageGen import ImageGen
 
 Log("BingChat")
 log = Log.BingChat.debug  # shortcut to create a log entry

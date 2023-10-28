@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "bingchat"
+version = "1.9.5"
+description = "Bing-Chat-API"
+authors = ["Zack Bradshaw <zack@zackbradshaw.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+aiohttp = "*"
+BingImageCreator = "*"
+certifi = "*"
+httpx = "*"
+prompt_toolkit = "*"
+requests = "*"
+rich = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bing-chat = "main:main"
+
+[tool.poetry.urls]
+"Bug Report" = "https://github.com/Agora-X/Bing-Chat-API/issues/new"
