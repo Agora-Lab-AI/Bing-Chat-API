@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "bingchat"
+name = "bing-chat"
 version = "1.9.5"
 description = "Bing-Chat-API"
 authors = ["Zack Bradshaw <zack@zackbradshaw.com>"]
